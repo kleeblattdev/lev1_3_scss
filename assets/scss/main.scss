@@ -1,0 +1,19 @@
+@import "mixins.scss";
+
+.container{
+    border-top: 2px solid black;
+    .ball1, .ball2, .ball3{
+        @include ballSize;
+        @include animation;
+        @include keyframes;
+    }
+    .ball1{
+        @include bgColor(red);
+    }
+    .ball2{
+        @include bgColor(blue);
+    }
+    .ball3{
+        @include bgColor(yellow);
+    }
+}
